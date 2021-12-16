@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #faf8ff;
 }
 
 h1 {
@@ -45,7 +46,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #2c2c2c;
+  color: #3c3c40;
 }
 
 .main-head {
@@ -58,19 +59,19 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   min-height: 10vh;
   width: 60%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 nav .logo {
@@ -78,18 +79,18 @@ nav .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20rem;
-          flex: 1 1 20rem;
+  -ms-flex: 1 1 20rem;
+  flex: 1 1 20rem;
 }
 
 nav .logo h1 {
@@ -101,17 +102,17 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
 }
 
 .intro {
@@ -119,27 +120,33 @@ nav ul {
   width: 90%;
   margin: auto;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .intro h2 {
   font-size: 8rem;
   padding-top: 2rem;
-  background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
-  background: linear-gradient(left, #38d39f, #38a4d3);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#535260),
+    to(#cfd7e7)
+  );
+  background: linear-gradient(left, #535260, #cfd7e7);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -147,13 +154,14 @@ nav ul {
 }
 
 h3 {
-  font-size: 6rem;
+  font-size: 5rem;
   padding: 2rem 0rem;
+  color: #3c3c40;
 }
 
 p {
   padding-top: 2rem;
-  color: #2c2c2c;
+  color: #3c3c40;
 }
 
 .splash {
@@ -166,14 +174,14 @@ p {
 
 .intro-text {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
 }
 
 .introi-images svg {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
 }
 
 .intro-social {
@@ -185,9 +193,107 @@ p {
 }
 
 .active {
-  background: #2c2c2c;
+  background: #515151;
   color: white;
   padding: 1rem 2rem;
   border-radius: 2rem;
+}
+
+#plant-left {
+  -webkit-animation: plant 1.5s ease infinite alternate;
+  animation: plant 1.5s ease infinite alternate;
+}
+
+#plant-right {
+  -webkit-animation: plant 1.5s ease infinite alternate 0.5s;
+  animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+#me {
+  -webkit-animation: me 1s ease-in-out infinite alternate;
+  animation: me 1s ease-in-out infinite alternate;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+#Vector_9 {
+  -webkit-animation: me 1s ease-in-out infinite alternate;
+  animation: me 1s ease-in-out infinite alternate;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+  -webkit-animation: clock 2s linear infinite;
+  animation: clock 2s linear infinite;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+@-webkit-keyframes plant {
+  from {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes plant {
+  from {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+}
+
+@-webkit-keyframes me {
+  from {
+    -webkit-transform: rotateZ(-3deg);
+    transform: rotateZ(-3deg);
+  }
+  to {
+    -webkit-transform: rotateZ(3deg);
+    transform: rotateZ(3deg);
+  }
+}
+
+@keyframes me {
+  from {
+    -webkit-transform: rotateZ(-3deg);
+    transform: rotateZ(-3deg);
+  }
+  to {
+    -webkit-transform: rotateZ(3deg);
+    transform: rotateZ(3deg);
+  }
+}
+
+@-webkit-keyframes clock {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

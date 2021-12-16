@@ -39,8 +39,9 @@ nav {
 }
 
 h3 {
-  font-size: 6rem;
+  font-size: 5rem;
   padding: 2rem 0rem;
+  color: $gray-text;
 }
 
 p {
@@ -72,8 +73,59 @@ p {
 }
 
 .active {
-  background: $gray-text;
+  background: $gray-logo-color;
   color: white;
   padding: 1rem 2rem;
   border-radius: 2rem;
+}
+
+#plant-left {
+  animation: plant 1.5s ease infinite alternate;
+}
+
+#plant-right {
+  animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+#me {
+  animation: me 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#Vector_9 {
+  animation: me 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+  animation: clock 2s linear infinite;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-3deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
