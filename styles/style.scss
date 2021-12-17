@@ -3,10 +3,10 @@ $header2: 4rem;
 $header3: 2.5rem;
 $header4: 2rem;
 $text: 2.5rem;
-$gradient: linear-gradient(left, #535260, #cfd7e7);
+$gradient: linear-gradient(bottom, #2a2841, #e9eef8);
 $background-color: #154353;
 $gray-text: #3c3c40;
-$gray-logo-color: #515151;
+$gray-black-color: #252424;
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
@@ -17,3 +17,65 @@ $gray-logo-color: #515151;
 
 @import "global";
 @import "intro";
+
+@media screen and (max-width: 1292px) {
+  html {
+    font-size: 53%;
+  }
+  .splash {
+    display: none;
+  }
+  svg {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+  .logo {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  .splash {
+    display: none;
+  }
+
+  svg {
+    height: 70%;
+  }
+
+  nav {
+    .logo {
+      @include flex(center, center, column);
+      flex: 1 1 20rem;
+      margin-top: 2rem;
+    }
+    ul {
+      flex: 1 1 60rem;
+      margin: 2rem 0rem;
+    }
+  }
+
+  .main-head {
+    width: 1005;
+  }
+
+  .intro-text {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .intro-social {
+    @include flex(center, center, row);
+    a {
+      margin: 2rem;
+    }
+  }
+  .intro-images {
+    text-align: center;
+  }
+}
